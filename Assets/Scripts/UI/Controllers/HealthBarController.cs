@@ -135,7 +135,7 @@ namespace UIToolkitDemo
         void MoveToWorldPosition(VisualElement element, Vector3 worldPosition, Vector2 worldSize)
         {
             Rect rect = RuntimePanelUtils.CameraTransformWorldToPanelRect(element.panel, worldPosition, worldSize, Camera.main);
-            element.transform.position = rect.position;
+            element.style.translate = new Translate(rect.position.x, rect.position.y);
 
         }
 

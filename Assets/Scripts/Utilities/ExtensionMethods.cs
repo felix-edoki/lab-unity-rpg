@@ -120,7 +120,7 @@ public static class ExtensionMethods
     {
         Rect rect = RuntimePanelUtils.CameraTransformWorldToPanelRect(element.panel, worldPosition, worldSize,
             Camera.main);
-        element.transform.position = rect.position;
+        element.style.translate = new Translate(rect.position.x, rect.position.y);
     }
 
     /// <summary>
@@ -161,7 +161,8 @@ public static class ExtensionMethods
         Vector3 offset = newWorldPosition -
                          new Vector3(boundingRect.center.x, boundingRect.center.y, newWorldPosition.z);
 
-        element.transform.position += offset;
+        Vector3 current = element.resolvedStyle.translate;
+        element.style.translate = new Translate(current.x + offset.x, current.y + offset.y);
     }
 
     /// <summary>

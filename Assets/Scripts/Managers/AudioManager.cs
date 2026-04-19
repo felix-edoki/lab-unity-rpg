@@ -84,7 +84,7 @@ namespace UIToolkitDemo
         // return an AudioMixerGroup by name
         public static AudioMixerGroup GetAudioMixerGroup(string groupName)
         {
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
 
             if (audioManager == null)
                 return null;
@@ -124,7 +124,7 @@ namespace UIToolkitDemo
         // converts linear value between 0 and 1 into decibels and sets AudioMixer level
         public static void SetVolume(string groupName, float linearValue)
         {
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
             if (audioManager == null)
                 return;
 
@@ -140,7 +140,7 @@ namespace UIToolkitDemo
         public static float GetVolume(string groupName)
         {
 
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
             if (audioManager == null)
                 return 0f;
 
@@ -155,7 +155,7 @@ namespace UIToolkitDemo
         // convenient methods for playing a range of pre-defined sounds
         public static void PlayDefaultButtonSound()
         {
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
             if (audioManager == null)
                 return;
 
@@ -164,7 +164,7 @@ namespace UIToolkitDemo
 
         public static void PlayAltButtonSound()
         {
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
             if (audioManager == null)
                 return;
 
@@ -173,7 +173,7 @@ namespace UIToolkitDemo
 
         public static void PlayDefaultTransactionSound()
         {
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
             if (audioManager == null)
                 return;
 
@@ -182,7 +182,7 @@ namespace UIToolkitDemo
 
         public static void PlayDefaultWarningSound()
         {
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
             if (audioManager == null)
                 return;
 
@@ -190,7 +190,7 @@ namespace UIToolkitDemo
         }
         public static void PlayVictorySound()
         {
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
             if (audioManager == null)
                 return;
 
@@ -199,7 +199,7 @@ namespace UIToolkitDemo
 
         public static void PlayDefeatSound()
         {
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
             if (audioManager == null)
                 return;
 
@@ -208,7 +208,7 @@ namespace UIToolkitDemo
 
         public static void PlayPotionDropSound()
         {
-            AudioManager audioManager = FindFirstObjectByType<AudioManager>();
+            AudioManager audioManager = FindAnyObjectByType<AudioManager>();
             if (audioManager == null)
                 return;
 

@@ -195,7 +195,7 @@ namespace UIToolkitDemo
         int CalculateDuration(Vector3 newPosition)
         {
             // add extra animation time if moving more than one space 
-            Vector3 delta = m_MenuMarker.transform.position - newPosition;
+            Vector3 delta = (Vector3)m_MenuMarker.resolvedStyle.translate - newPosition;
 
             float distanceInPixels = Mathf.Abs(delta.y / k_Spacing);
 

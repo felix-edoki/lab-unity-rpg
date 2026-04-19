@@ -59,7 +59,7 @@ namespace UIToolkitDemo
         {
             if (m_Document == null)
             {
-                m_Document = FindFirstObjectByType<UIDocument>();
+                m_Document = FindAnyObjectByType<UIDocument>();
             }
 
             if (m_Document == null)

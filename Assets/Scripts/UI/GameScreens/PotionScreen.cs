@@ -137,7 +137,7 @@ namespace UIToolkitDemo
             float newX = m_IconStartPosition.x + (pointerPosition.x - m_PointerStartPosition.x);
             float newY = m_IconStartPosition.y + (pointerPosition.y - m_PointerStartPosition.y);
 
-            m_PointerIcon.transform.position = new Vector2(newX, newY);
+            m_PointerIcon.style.translate = new Translate(newX, newY);
         }
 
         /// <summary>
@@ -210,7 +210,7 @@ namespace UIToolkitDemo
             m_DragArea.CapturePointer(evt.pointerId);
 
             // set the icon and pointer starting positions
-            m_IconStartPosition = m_PointerIcon.transform.position;
+            m_IconStartPosition = m_PointerIcon.resolvedStyle.translate;
             m_PointerStartPosition = evt.position;
 
             m_IsDragging = true;
@@ -228,7 +228,7 @@ namespace UIToolkitDemo
             m_IsDragging = false;
             
             // Restore the potion icon
-            m_PointerIcon.transform.position = m_IconStartPosition;
+            m_PointerIcon.style.translate = new Translate(m_IconStartPosition.x, m_IconStartPosition.y);
 
             // Send a message with the selected slot
             if (m_ActiveZone != null)

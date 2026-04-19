@@ -4,7 +4,11 @@
       "Bash(git config *)",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git filter-branch -f --env-filter ' *)",
+      "Bash(git stash *)",
+      "Bash(xargs -n 1 git update-ref -d)",
+      "Bash(gh issue *)"
     ]
   },
   "enableAllProjectMcpServers": true,

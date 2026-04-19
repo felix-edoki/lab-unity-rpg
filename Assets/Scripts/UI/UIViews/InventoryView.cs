@@ -198,7 +198,7 @@ namespace UIToolkitDemo
             UpdateFilters(null);
 
             // add short transition
-            m_InventoryPanel.transform.scale = new Vector3(0.1f, 0.1f, 0.1f);
+            m_InventoryPanel.style.scale = new Scale(new Vector3(0.1f, 0.1f, 0.1f));
             m_InventoryPanel.experimental.animation.Scale(1f, 200);
         }
 

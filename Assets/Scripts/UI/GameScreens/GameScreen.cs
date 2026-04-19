@@ -52,7 +52,7 @@ namespace UIToolkitDemo
             RegisterButtonCallbacks();
 
             if (m_Volume == null)
-                m_Volume = FindFirstObjectByType<Volume>();
+                m_Volume = FindAnyObjectByType<Volume>();
 
             GameplayEvents.WinScreenShown += OnGameWon;
             GameplayEvents.LoseScreenShown += OnGameLost;
