@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
     <Style src="project://database/Assets/UI/Uss/Base/BackButton.uss?fileID=7433441132597879392&amp;guid=c94195ad6d09744f4a70246bca8d99f2&amp;type=3#BackButton" />
-    <Style src="project://database/Assets/UI/Uss/Base/SlidersHorizontal.uss?fileID=7433441132597879392&amp;guid=3f5063036513c4227bbf04b7b4fd7f59&amp;type=3#SlidersHorizontal" />
+    <Style src="project://database/Assets/UI/Uss/Base/SlidersHorizontal.uss?fileID=7433441132597879392&amp;guid=b70346ab9f72e4db4ab4ec16f1b1c16f&amp;type=3#SlidersHorizontal" />
     <Style src="project://database/Assets/UI/Uss/Screens/PauseScreen.uss?fileID=7433441132597879392&amp;guid=5a2eb5b505d44f248bda8b0e86354e06&amp;type=3#PauseScreen" />
     <ui:VisualElement name="pause__screen" picking-mode="Ignore" class="pause__screen cursor-a" style="top: 0; left: 0;">
         <ui:VisualElement name="pause__background" picking-mode="Ignore" class="pause__background cursor-a" />

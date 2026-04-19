@@ -6,7 +6,7 @@ SpriteAtlasAsset:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_MasterAtlas: {fileID: 0}
   m_ImporterData:
     serializedVersion: 2
@@ -45,11 +45,13 @@ SpriteAtlasAsset:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 102900000, guid: fde59e623f3fa40b8bc8c26e1cfd869d, type: 3}
-    - {fileID: 102900000, guid: 2ae82ef7d687446ae84ad6ff4fa5335c, type: 3}
-    - {fileID: 102900000, guid: 4835b15e42c9642369ebbc45f7d7b4f5, type: 3}
-    - {fileID: 102900000, guid: 7e243d7a657a841e4813978933e1f816, type: 3}
-    - {fileID: 102900000, guid: 354f69b23eff54e3cb2144ac6bca2398, type: 3}
+    - {fileID: 2800000, guid: 756d5125e980e4838801726ba57efcc7, type: 3}
+    - {fileID: 2800000, guid: 04a6b32c5c81d4c7f87cb9cc28c86f6a, type: 3}
+    - {fileID: 2800000, guid: 5b4cbeb08f1a148c78a1eeb4dac3c48c, type: 3}
+    - {fileID: 2800000, guid: 31ca05de6afcb4f519c0912552ec1623, type: 3}
+    - {fileID: 2800000, guid: 2f49ed0b789994b93bd0930cf7006cf4, type: 3}
+    - {fileID: 2800000, guid: 6c7d16457e9cf464eb81a64dd23defad, type: 3}
+    - {fileID: 102900000, guid: 28503849b6e604cd1994b50e983a3809, type: 3}
     bindAsDefault: 1
     isAtlasV2: 1
     cachedData: {fileID: 0}
