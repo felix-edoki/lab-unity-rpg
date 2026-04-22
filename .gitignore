@@ -68,4 +68,4 @@ crashlytics-build.properties
 ehthumbs.db
 Thumbs.db
 
-
+.claude/settings.local.json
