@@ -87,11 +87,13 @@ public class BattleGameplayManager : MonoBehaviour
         for (int i = 0; i < aliveHeroUnits.Count; i++)
         {
             aliveHeroUnits[i].AssignTargetUnits(aliveEnemyUnits);
+            aliveHeroUnits[i].AssignAllyUnits(aliveHeroUnits);
         }
 
         for (int i = 0; i < aliveEnemyUnits.Count; i++)
         {
             aliveEnemyUnits[i].AssignTargetUnits(aliveHeroUnits);
+            aliveEnemyUnits[i].AssignAllyUnits(aliveEnemyUnits);
         }
     }
 

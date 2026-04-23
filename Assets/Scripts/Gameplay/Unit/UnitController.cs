@@ -18,6 +18,9 @@ public class UnitController : MonoBehaviour
     [Header("Target Settings")]
     public UnitTargetsBehaviour targetsBehaviour;
 
+    [Header("Ally Settings")]
+    public List<UnitController> allyUnits = new List<UnitController>();
+
     [Header("Ability Settings")]
     public UnitAbilitiesBehaviour abilitiesBehaviour;
 
@@ -130,6 +133,17 @@ public class UnitController : MonoBehaviour
         targetsBehaviour.RemoveTargetUnit(unit);
     }
 
+    public void AssignAllyUnits(List<UnitController> units)
+    {
+        allyUnits = units;
+    }
+
+    public bool IsAlive() => unitIsAlive;
+
+    public int GetMaxHealth() => healthBehaviour != null && healthBehaviour.HealthData != null
+        ? healthBehaviour.HealthData.MaximumHealth
+        : 0;
+
     public void SetAlive()
     {
         // Initialize HealthData
@@ -195,10 +209,16 @@ public class UnitController : MonoBehaviour
 
     public void ReceiveAbilityValue(int abilityValue)
     {
+        ReceiveAbilityValue(abilityValue, false);
+    }
+
+    public void ReceiveAbilityValue(int abilityValue, bool suppressHitAnim)
+    {
         if (unitIsAlive)
         {
             healthBehaviour.ChangeHealth(abilityValue);
-            characterAnimationBehaviour.CharacterWasHit();
+            if (!suppressHitAnim)
+                characterAnimationBehaviour.CharacterWasHit();
 
             healthBarBehaviour.UpdateHealth(GetCurrentHealth());
         }
